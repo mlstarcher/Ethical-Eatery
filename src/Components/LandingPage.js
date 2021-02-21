@@ -68,7 +68,7 @@ const LandingPage = (props) => {
         <Card.Body className='d-flex justify-content-center'>
           <Form onSubmit={(event) => {event.preventDefault(); submitSearch()}}>
             <div className="mb-4" style={{width: "100%"}}>
-              <h2>Where Are We Eating Today?</h2>
+              <h2 style={{ opacity: '85%' }}>Where Are We Eating Today?</h2>
             </div>
               <Form.Group controlId="formRestaurantSearch" className="d-flex">
                 <Form.Control type="text" placeholder="Search Restaurants..." className="mr-sm-2" onChange={(event) => {setSearch(event.target.value)}}/>

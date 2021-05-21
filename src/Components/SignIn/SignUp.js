@@ -16,7 +16,6 @@ const SignUp = () => {
 
   async function handleSubmit(e) {
     e.preventDefault()
-
     if (passwordRef.current.value !== passwordConfirmRef.current.value) {
       return setError(`Error, the passwords don't match!`)
     }
@@ -30,14 +29,10 @@ const SignUp = () => {
       setError('Failed to create an account')
     }
     setLoading(false)
-    // signup(emailRef.current.value, passwordRef.current.value)
   }
 
   return (
     <Container className='d-flex align-text-center justify-content-between flex-column' style={{ minHeight: "100vh", maxWidth: "600px" }}>
-    {/* <Navbar className='d-flex justify-content-center align-items-center mh-20' style={{minHeight: "100px", border: "0px"}}>
-      <Navbar.Brand></Navbar.Brand>
-    </Navbar> */}
     <Card className='d-flex justify-content-center' style={{ height: "65vh", border: "0px", maxWidth: '100vh' }}>
       <Card.Body>
       <Card>
